@@ -95,6 +95,10 @@ header {
   min-height: 100vh;
 }
 
+header .header-navigation {
+  max-width: 1120px;
+}
+
 header .header-navigation__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,6 +532,7 @@ body main .conteiner {
 
 .header-navigation.activ {
   position: fixed;
-  width: calc(100vw - 20px);
+  margin-left: -10px;
+  width: 100vw;
   background: rgba(7, 7, 7, 0.418);
 }

@@ -183,6 +183,7 @@ body {
 
 .header-navigation.activ {
     position: fixed;
-    width: calc(100vw - 20px);
+    margin-left: -10px;
+    width: 100vw;
     background: rgba(7, 7, 7, 0.418);
 }
