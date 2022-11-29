@@ -7,6 +7,3 @@ window.addEventListener('scroll', e => {
         scroll.classList.remove('activ')
     }
 })
-
-
-console.log(scroll);

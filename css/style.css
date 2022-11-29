@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap");
 * {
   padding: 0;
@@ -92,7 +92,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  min-height: 100vh;
+  height: 100vh;
+  background: url("/img/header/bg-main.png") center/cover no-repeat;
 }
 
 header .header-navigation {
@@ -237,7 +238,6 @@ header .header-navigation__nav-tel {
 .action-table table td {
   text-align: center;
   border: 1px solid #000;
-  width: 130px;
   height: 50px;
 }
 
@@ -483,11 +483,11 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', 'Oranienbaum', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   margin: 0 auto;
-  background: url("/img/header/bg-main.png") center/cover no-repeat;
+  font-size: calc(10px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
 }
 
 body .conteiner {
@@ -510,16 +510,24 @@ body h3 {
   color: var(--main-color-w);
   font-family: 'Oranienbaum', sans-serif;
   text-transform: uppercase;
+  font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
 }
 
 body h4 {
   color: var(--main-color-d);
   font-family: 'Oranienbaum', sans-serif;
+  font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
 }
 
 body button {
   width: 100px;
   height: 40px;
+}
+
+@media (max-width: 992px) {
+  body button {
+    width: 90px;
+  }
 }
 
 body main {

@@ -5,8 +5,6 @@
 
 @import "_font name.scss";
 
-// @import "_burger.scss";
-
 @import "_adaptiv.scss";
 
 @import "./styles-section/header.scss";
@@ -23,30 +21,6 @@
 
 //!===============================================================================
 
-%font-martel8-h2 {
-    font-weight: 800;
-    font-size: 67px;
-    line-height: 70px;
-}
-
-%font-martel7-h3 {
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 60px;
-}
-
-%font-martel6-h4 {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: uppercase;
-}
-
-%font-martel4-p {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-}
 
 :root {
     --main-rotate-minus: -55deg;
@@ -72,6 +46,9 @@
     align-items: center;
     width: 200px;
     height: 50px;
+
+    
+
     background: var(--main-color-m);
     border-radius: 5px;
     transition: background 0.3s ease 0s;
@@ -106,11 +83,7 @@
     }
 }
 
-%flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 @media (max-width:1200px) {
     %flex {
@@ -129,11 +102,11 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', 'Oranienbaum', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     margin: 0 auto;
-    background: url('/img/header/bg-main.png') center/cover no-repeat;
+    font-size: calc(10px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
 
     .conteiner {
         max-width: 1120px;
@@ -154,16 +127,20 @@ body {
         color: var(--main-color-w);
         font-family: 'Oranienbaum', sans-serif;
         text-transform: uppercase;
+        font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
     }
 
     h4 {
         color: var(--main-color-d);
         font-family: 'Oranienbaum', sans-serif;
+        font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
     }
 
     button {
         @extend %btn;
-
+        @media (max-width:992px) {
+            width: 90px;
+        }
         width: 100px;
         height: 40px;
     }
