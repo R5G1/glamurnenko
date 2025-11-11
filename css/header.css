@@ -1,0 +1,93 @@
+header {
+  height: 100vh;
+  background: url("/img/header/bg-main.png") center/cover no-repeat;
+}
+
+header .header-navigation {
+  max-width: 1120px;
+}
+
+header .header-navigation__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px;
+}
+
+header .header-navigation__nav-messenger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .header-navigation__nav-img-inst, header .header-navigation__nav-img-facebook, header .header-navigation__nav-img-vk {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+header .header-navigation__nav-img-inst {
+  background: url("/img/header/insta0.png") 0 0/40px 40px no-repeat;
+}
+
+header .header-navigation__nav-img-inst:hover {
+  background: url("/img/header/insta1.png") 0 0/40px 40px no-repeat;
+}
+
+header .header-navigation__nav-img-facebook {
+  background: url("/img/header/facebook0.png") 0 0/40px 40px no-repeat;
+}
+
+header .header-navigation__nav-img-facebook:hover {
+  background: url("/img/header/facebook1.png") 0 0/40px 40px no-repeat;
+}
+
+header .header-navigation__nav-img-vk {
+  background: url("/img/header/vk0.png") 0 0/40px 40px no-repeat;
+}
+
+header .header-navigation__nav-img-vk:hover {
+  background: url("/img/header/vk1.png") 0 0/40px 40px no-repeat;
+}
+
+header .header-navigation__nav-tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-main .header-main-conteiner {
+  max-height: 500px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-main .header-main-conteiner-title-img {
+  width: 200px;
+  height: 140px;
+  background: url("/img/header/logo-new.png") 0 0/contain no-repeat;
+}
+
+.header-main .header-main-conteiner-title-link {
+  color: var(--main-color-g);
+}

@@ -1,0 +1,67 @@
+.action-container p {
+  padding: 10px 0;
+}
+
+.action-container__title {
+  color: var(--main-color-b);
+  padding: 10px 0;
+}
+
+.action-container__text-help p {
+  text-align: center;
+  margin: 0 120px;
+}
+
+.action-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.action-table table {
+  background: var(--main-color-g);
+}
+
+.action-table table td {
+  text-align: center;
+  border: 1px solid #000;
+  height: 50px;
+}
+
+.action-table table td button {
+  margin: 0 auto;
+}
+
+.action-table__tr-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.action-table__tr-icon p {
+  margin: 2px;
+  padding: 2px;
+  border: 1px solid #000;
+}
+
+.action-table__tr {
+  background: var(--main-color-gm);
+}
+
+.action-books__bg {
+  width: 100%;
+  height: 60vh;
+  background: url("/img/action/2razmera_books_preview_1200_c.png") 0 0/100% auto no-repeat;
+}
